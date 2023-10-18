@@ -15,6 +15,7 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 class User extends Authenticatable implements JWTSubject
 {
     // use HasApiTokens, HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * The attributes that are mass assignable.
